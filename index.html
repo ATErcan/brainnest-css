@@ -13,94 +13,84 @@
 		inline CSS?
 	</h4>
 	<p>
-		
+		The place that we write our css code is the main difference. But this 
+		also affects the issue of which style code is applied.
 	</p>
 
-	<h4>
-		2. What is the syntax for class and ID selectors?
-	</h4>
-	<p>  </p>
+	<h4> 2. What is the syntax for class and ID selectors? </h4>
+	<p> Dot(.) for classes (.class), hash(#) for id's (#id) </p>
 
 	<h4>
 		3. How would you apply a single rule to two different selectors?
 	</h4>
-	<p>  </p>
+	<p> 
+		We select both elements with selectors and seperate them with comma, 
+		then we can give any rule we want.
+	</p>
 
 	<h4>
 		4. Given an element that has an id of title and a class of primary, 
 		how would you use both attributes for a single rule?
 	</h4>
-	<p>
-		
-	</p>
+	<p> #title.primary </p>
 
-	<h4>
-		5. What does the descendant combinator do?
-	</h4>
+	<h4> 5. What does the descendant combinator do?	</h4>
 	<p>
-		
+		Selects the every element inside of parent element. Doesn't matter how 
+		nested element is.
 	</p>
 
 	<h4>
 		6. Between a rule that uses one class selector and a rule that uses 
 		three type selectors, which rule has the higher specificity?
 	</h4>
-	<p>
-		
-	</p>
+	<p> Class </p>
 
 	<h4>
 		7. From inside to outside, what is the order of box-model properties?
 	</h4>
-	<p>
-		
-	</p>
+	<p> Content, padding, border, margin </p>
 
-	<h4>
-		8. What does the box-sizing CSS property do?
-	</h4>
-	<p>
-		
-	</p>
+	<h4> 8. What does the box-sizing CSS property do? </h4>
+	<p> Specifies the behavior of width and height properties. </p>
 
 	<h4>
 		9. What is the difference between the standard and alternative 
 		box model?
 	</h4>
 	<p>
-		
+		The difference between standard and alternative box models is how they 
+		handle padding and borders. Standard box-model doesn't include paddings 
+		and borders in width and height properties. On the other hand, 
+		alternative box-model does include.
 	</p>
 
 	<h4>
 		10. Would you use margin or padding to create more space between 
 		2 elements?
 	</h4>
-	<p>
-		
-	</p>
+	<p>	Margin </p>
 
 	<h4>
 		11. Would you use margin or padding to create more space between 
 		the contents of an element and its border?
 	</h4>
-	<p>
-		
-	</p>
+	<p> Padding </p>
 
 	<h4>
 		12. Would you use margin or padding if you wanted two elements to 
 		overlap each other?
 	</h4>
-	<p>
-		
-	</p>
+	<p> Margin </p>
 
 	<h4>
 		13. What is the difference between a block element and an inline 
 		element?
 	</h4>
 	<p>
-		
+		A block element occupies the entire line, regardless of the width of 
+		the content in it. On the other hand, inline element takes up as much 
+		space as the content inside of it.
 	</p>
 
 	<h4>
@@ -108,62 +98,56 @@
 		inline-block element?
 	</h4>
 	<p>
-		
+		Inline elements do not take properties such as margin, padding from top 
+		or bottom. Animations do not work on these elements. But these properties 
+		work for inline-block elements.
 	</p>
 
 	<h4> 15. Is an h1 block or inline? </h4>
-	<p>
-		
-	</p>
+	<p>	Block </p>
 
 	<h4> 16. Is button block or inline? </h4>
-	<p>
-		
-	</p>
+	<p> Inline </p>
 
 	<h4> 17. Is div block or inline? </h4>
-	<p>
-		
-	</p>
+	<p> Block </p>
 
 	<h4> 18. Is span block or inline? </h4>
-	<p>
-		
-	</p>
+	<p> Inline </p>
 
 	<h4>
 		19. What’s the difference between a flex container and a flex 
 		item?
 	</h4>
 	<p>
-		
+		A flex container is the element that takes the display-flex property. It is 
+		not aligned, it contains elements that are aligned. Flex-item, on the other 
+		hand, is the aligned element inside the flex-container.
 	</p>
 
 	<h4> 20. How do you create a flex item? </h4>
-	<p>
-		&#60;li&#62;&#60;li&#62;
-	</p>
+	<p>	Giving display property which takes flex value to it's parent element. </p>
 	
 	<h4>
 		21. What are the 3 values defined in the shorthand flex property?
 	</h4>
-	<p>
-		
-	</p>
+	<p> flex-grow, flex-shrink, flex-basis </p>
 
 	<h4>
 		22. How do you make flex items arrange themselves vertically 
 		instead of horizontally?
 	</h4>
 	<p>
-		
+		With flex-direction property which takes column or column-reverse value.
 	</p>
 
 	<h4>
 		23. What is the difference between justify-content and align-items?
 	</h4>
 	<p>
-		
+		As default justify-content aligns elements horizontally and align-items 
+		aligns elements vertically. However flex-direction property can change 
+		the axis and if that happens, those 2 properties switch roles.
 	</p>
 
 	<h4>
@@ -171,7 +155,10 @@
 		container?
 	</h4>
 	<p>
-		
+		With giving flex-container the following properties:
+		display: flex;
+		justify-content: center;
+		align-items: center;		
 	</p>
 
 	<h4>
@@ -179,7 +166,11 @@
 		justify-content: space-around?
 	</h4>
 	<p>
-		
+		space-between leans the first and last elements to the edges and aligns
+		the other elements with equal spaces.
+		space-around puts some space between the first-last element and the edges 
+		close to them, and aligns them with the other elements by keeping the 
+		space a little wider.
 	</p>
 </body>
 </html>
